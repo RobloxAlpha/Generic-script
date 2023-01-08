@@ -1,0 +1,410 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local CrackedX = Instance.new("ScreenGui")
+local KeyChecker = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local KeyBox = Instance.new("TextBox")
+local UICorner_2 = Instance.new("UICorner")
+local Title = Instance.new("TextLabel")
+local TypeKey = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local Continue = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local loader = Instance.new("Frame")
+local UICorner_5 = Instance.new("UICorner")
+local Title_2 = Instance.new("TextLabel")
+local LoadString = Instance.new("TextLabel")
+local Main = Instance.new("Frame")
+local UICorner_6 = Instance.new("UICorner")
+local Title_3 = Instance.new("TextLabel")
+local StringFunction = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local Close = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local Downloadstringinfinity = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local Downloadstringcmd = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local Downloadstringbedwars = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local Open = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+
+--Properties:
+
+CrackedX.Name = "Cracked X"
+CrackedX.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+CrackedX.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+KeyChecker.Name = "KeyChecker"
+KeyChecker.Parent = CrackedX
+KeyChecker.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+KeyChecker.Position = UDim2.new(0.397553533, 0, 0.351931393, 0)
+KeyChecker.Size = UDim2.new(0, 544, 0, 238)
+
+UICorner.CornerRadius = UDim.new(0, 18)
+UICorner.Parent = KeyChecker
+
+KeyBox.Name = "KeyBox"
+KeyBox.Parent = KeyChecker
+KeyBox.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+KeyBox.Position = UDim2.new(0.143382356, 0, 0.294117659, 0)
+KeyBox.Size = UDim2.new(0, 385, 0, 50)
+KeyBox.ClearTextOnFocus = false
+KeyBox.Font = Enum.Font.SourceSans
+KeyBox.Text = "Key Here"
+KeyBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+KeyBox.TextScaled = true
+KeyBox.TextSize = 14.000
+KeyBox.TextWrapped = true
+
+UICorner_2.CornerRadius = UDim.new(0, 18)
+UICorner_2.Parent = KeyBox
+
+Title.Name = "Title"
+Title.Parent = KeyChecker
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Size = UDim2.new(0, 544, 0, 29)
+Title.Font = Enum.Font.SourceSans
+Title.Text = "Cracked X - Key System"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+TypeKey.Name = "TypeKey"
+TypeKey.Parent = KeyChecker
+TypeKey.BackgroundColor3 = Color3.fromRGB(67, 67, 67)
+TypeKey.Position = UDim2.new(0.505514681, 0, 0.663865447, 0)
+TypeKey.Size = UDim2.new(0, 188, 0, 50)
+TypeKey.Font = Enum.Font.SourceSans
+TypeKey.Text = "Type Key"
+TypeKey.TextColor3 = Color3.fromRGB(255, 255, 255)
+TypeKey.TextScaled = true
+TypeKey.TextSize = 14.000
+TypeKey.TextWrapped = true
+
+UICorner_3.CornerRadius = UDim.new(0, 12)
+UICorner_3.Parent = TypeKey
+
+Continue.Name = "Continue"
+Continue.Parent = KeyChecker
+Continue.BackgroundColor3 = Color3.fromRGB(67, 67, 67)
+Continue.Position = UDim2.new(0.143382356, 0, 0.663865447, 0)
+Continue.Size = UDim2.new(0, 197, 0, 50)
+Continue.Font = Enum.Font.SourceSans
+Continue.Text = "Continue"
+Continue.TextColor3 = Color3.fromRGB(255, 255, 255)
+Continue.TextScaled = true
+Continue.TextSize = 14.000
+Continue.TextWrapped = true
+
+UICorner_4.CornerRadius = UDim.new(0, 12)
+UICorner_4.Parent = Continue
+
+loader.Name = "loader"
+loader.Parent = CrackedX
+loader.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+loader.Position = UDim2.new(0.395107061, 0, 0.355150253, 0)
+loader.Size = UDim2.new(0, 544, 0, 238)
+loader.Visible = false
+
+UICorner_5.CornerRadius = UDim.new(0, 18)
+UICorner_5.Parent = loader
+
+Title_2.Name = "Title"
+Title_2.Parent = loader
+Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.BackgroundTransparency = 1.000
+Title_2.Size = UDim2.new(0, 544, 0, 29)
+Title_2.Font = Enum.Font.SourceSans
+Title_2.Text = "Cracked X - Loader"
+Title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.TextScaled = true
+Title_2.TextSize = 14.000
+Title_2.TextWrapped = true
+
+LoadString.Name = "LoadString"
+LoadString.Parent = loader
+LoadString.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LoadString.BackgroundTransparency = 1.000
+LoadString.Position = UDim2.new(0, 0, 0.348739505, 0)
+LoadString.Size = UDim2.new(0, 544, 0, 59)
+LoadString.Font = Enum.Font.SourceSans
+LoadString.Text = "Cracked X - Loader"
+LoadString.TextColor3 = Color3.fromRGB(255, 255, 255)
+LoadString.TextScaled = true
+LoadString.TextSize = 14.000
+LoadString.TextWrapped = true
+
+Main.Name = "Main"
+Main.Parent = CrackedX
+Main.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+Main.Position = UDim2.new(0.818206906, 0, 0.299356282, 0)
+Main.Size = UDim2.new(0, 300, 0, 596)
+Main.Visible = false
+
+UICorner_6.CornerRadius = UDim.new(0, 18)
+UICorner_6.Parent = Main
+
+Title_3.Name = "Title"
+Title_3.Parent = Main
+Title_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_3.BackgroundTransparency = 1.000
+Title_3.Size = UDim2.new(0, 300, 0, 29)
+Title_3.Font = Enum.Font.SourceSans
+Title_3.Text = "Cracked X - v1.0.0"
+Title_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_3.TextScaled = true
+Title_3.TextSize = 14.000
+Title_3.TextWrapped = true
+
+StringFunction.Name = "StringFunction"
+StringFunction.Parent = Main
+StringFunction.BackgroundColor3 = Color3.fromRGB(67, 67, 67)
+StringFunction.Position = UDim2.new(0.150048822, 0, 0.0833285078, 0)
+StringFunction.Size = UDim2.new(0, 222, 0, 50)
+StringFunction.Font = Enum.Font.SourceSans
+StringFunction.Text = "Set WS&JP To 100"
+StringFunction.TextColor3 = Color3.fromRGB(255, 255, 255)
+StringFunction.TextScaled = true
+StringFunction.TextSize = 14.000
+StringFunction.TextWrapped = true
+
+UICorner_7.CornerRadius = UDim.new(0, 12)
+UICorner_7.Parent = StringFunction
+
+Close.Name = "Close"
+Close.Parent = Main
+Close.BackgroundColor3 = Color3.fromRGB(67, 67, 67)
+Close.Position = UDim2.new(-0.0032845051, 0, 0.947422385, 0)
+Close.Size = UDim2.new(0, 298, 0, 31)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "Close this"
+Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close.TextScaled = true
+Close.TextSize = 14.000
+Close.TextWrapped = true
+
+UICorner_8.CornerRadius = UDim.new(0, 12)
+UICorner_8.Parent = Close
+
+Downloadstringinfinity.Name = "Downloadstring infinity"
+Downloadstringinfinity.Parent = Main
+Downloadstringinfinity.BackgroundColor3 = Color3.fromRGB(67, 67, 67)
+Downloadstringinfinity.Position = UDim2.new(0.150048822, 0, 0.180643946, 0)
+Downloadstringinfinity.Size = UDim2.new(0, 222, 0, 50)
+Downloadstringinfinity.Font = Enum.Font.SourceSans
+Downloadstringinfinity.Text = "Infinity Yield"
+Downloadstringinfinity.TextColor3 = Color3.fromRGB(255, 255, 255)
+Downloadstringinfinity.TextScaled = true
+Downloadstringinfinity.TextSize = 14.000
+Downloadstringinfinity.TextWrapped = true
+
+UICorner_9.CornerRadius = UDim.new(0, 12)
+UICorner_9.Parent = Downloadstringinfinity
+
+Downloadstringcmd.Name = "Downloadstring cmd"
+Downloadstringcmd.Parent = Main
+Downloadstringcmd.BackgroundColor3 = Color3.fromRGB(67, 67, 67)
+Downloadstringcmd.Position = UDim2.new(0.150048822, 0, 0.282992929, 0)
+Downloadstringcmd.Size = UDim2.new(0, 222, 0, 50)
+Downloadstringcmd.Font = Enum.Font.SourceSans
+Downloadstringcmd.Text = "Prison life commands"
+Downloadstringcmd.TextColor3 = Color3.fromRGB(255, 255, 255)
+Downloadstringcmd.TextScaled = true
+Downloadstringcmd.TextSize = 14.000
+Downloadstringcmd.TextWrapped = true
+
+UICorner_10.CornerRadius = UDim.new(0, 12)
+UICorner_10.Parent = Downloadstringcmd
+
+Downloadstringbedwars.Name = "Downloadstring bedwars"
+Downloadstringbedwars.Parent = Main
+Downloadstringbedwars.BackgroundColor3 = Color3.fromRGB(67, 67, 67)
+Downloadstringbedwars.Position = UDim2.new(0.150048822, 0, 0.38030836, 0)
+Downloadstringbedwars.Size = UDim2.new(0, 222, 0, 50)
+Downloadstringbedwars.Font = Enum.Font.SourceSans
+Downloadstringbedwars.Text = "Bedwars vape"
+Downloadstringbedwars.TextColor3 = Color3.fromRGB(255, 255, 255)
+Downloadstringbedwars.TextScaled = true
+Downloadstringbedwars.TextSize = 14.000
+Downloadstringbedwars.TextWrapped = true
+
+UICorner_11.CornerRadius = UDim.new(0, 12)
+UICorner_11.Parent = Downloadstringbedwars
+
+Open.Name = "Open"
+Open.Parent = CrackedX
+Open.BackgroundColor3 = Color3.fromRGB(67, 67, 67)
+Open.Position = UDim2.new(0.914146721, 0, 0.562229276, 0)
+Open.Size = UDim2.new(0, 140, 0, 39)
+Open.Visible = false
+Open.Font = Enum.Font.SourceSans
+Open.Text = "open"
+Open.TextColor3 = Color3.fromRGB(255, 255, 255)
+Open.TextScaled = true
+Open.TextSize = 14.000
+Open.TextWrapped = true
+
+UICorner_12.CornerRadius = UDim.new(0, 12)
+UICorner_12.Parent = Open
+
+-- Scripts:
+
+local function TVZHT_fake_script() -- TypeKey.LocalScript 
+	local script = Instance.new('LocalScript', TypeKey)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local function Type()
+			pcall(function()
+				script.Parent.Parent.KeyBox.Text = "1qA25PzXmbKIWj"
+			end)
+		end
+		Type()
+	end)
+end
+coroutine.wrap(TVZHT_fake_script)()
+local function RIGO_fake_script() -- Continue.LocalScript 
+	local script = Instance.new('LocalScript', Continue)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.KeyBox.Text == "1qA25PzXmbKIWj" then
+			script.Parent.Parent.KeyBox.Text = "Checking Key..."
+			wait(2)
+			script.Parent.Parent.KeyBox.Text = "Correct Key!"
+			wait(2)
+			script.Parent.Parent.Visible = false
+			script.Parent.Parent.Parent.loader.Visible = true
+		end
+	end)
+end
+coroutine.wrap(RIGO_fake_script)()
+local function SKKUVX_fake_script() -- loader.LocalScript 
+	local script = Instance.new('LocalScript', loader)
+
+	local function Checked()
+		pcall(function()
+			local Main = script.Parent.Parent.Main
+			local down = script.Parent.LoadString
+	
+			down.Text = "Loading..."
+	
+			wait(2)
+	
+			down.Text = "Downloadstring Settings..."
+	
+			wait(5)
+	
+			down.Text = "Settings string..."
+	
+			wait(2)
+	
+			down.Text = "Downloadstring RemoteEvent&Functions..."
+	
+			local Remote1 = Instance.new("RemoteEvent", Main)
+			Remote1.Name = "ExecuteString"
+			local RemoteFunction1 = Instance.new("RemoteFunction", Main)
+			RemoteFunction1.Name = "FunctionString"
+	
+			wait(5)
+	
+			down.Text = "Checking Whitelist..."
+	
+			wait(2)
+	
+			down.Text = "Ready!"
+	
+			wait(2)
+	
+			script.Parent.Visible = false
+	
+			Main.Visible = true
+		end)
+	end
+	
+	while wait() do
+		if script.Parent.Parent.KeyChecker.KeyBox.Text == "Correct Key!" then
+			wait(2)
+			Checked()
+		end
+	end
+end
+coroutine.wrap(SKKUVX_fake_script)()
+local function YPYKGM_fake_script() -- StringFunction.LocalScript 
+	local script = Instance.new('LocalScript', StringFunction)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local function SetCharacterEffects()
+			pcall(function()
+				local plr = game.Players.LocalPlayer
+				plr.Character.Humanoid.WalkSpeed = 100
+				plr.Character.Humanoid.JumpPower = 100
+			end)
+		end
+		
+		SetCharacterEffects()
+	end)
+end
+coroutine.wrap(YPYKGM_fake_script)()
+local function PWTRIA_fake_script() -- Close.LocalScript 
+	local script = Instance.new('LocalScript', Close)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+		script.Parent.Parent.Parent.Open.Visible = true
+	end)
+end
+coroutine.wrap(PWTRIA_fake_script)()
+local function GVPIFVZ_fake_script() -- Downloadstringinfinity.LocalScript 
+	local script = Instance.new('LocalScript', Downloadstringinfinity)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local function ExecuteScriptHub()
+			pcall(function()
+				loadstring(game:HttpGet(("https://raw.githubusercontent.com/RobloxAlpha/Infinity-Yield-Project/main/Infinity%20Yield%20Script"), true))()
+			end)
+		end
+		ExecuteScriptHub()
+	end)
+end
+coroutine.wrap(GVPIFVZ_fake_script)()
+local function CDKTJR_fake_script() -- Downloadstringcmd.LocalScript 
+	local script = Instance.new('LocalScript', Downloadstringcmd)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local function ExecuteScriptHub()
+			pcall(function()
+				loadstring(game:HttpGet(("https://raw.githubusercontent.com/RobloxAlpha/CmdGui/main/CMDs"), true))()
+			end)
+		end
+		ExecuteScriptHub()
+	end)
+end
+coroutine.wrap(CDKTJR_fake_script)()
+local function HARJJAT_fake_script() -- Downloadstringbedwars.LocalScript 
+	local script = Instance.new('LocalScript', Downloadstringbedwars)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local function ExecuteScriptHub()
+			pcall(function()
+				loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+			end)
+		end
+		ExecuteScriptHub()
+	end)
+end
+coroutine.wrap(HARJJAT_fake_script)()
+local function VGWTO_fake_script() -- Open.LocalScript 
+	local script = Instance.new('LocalScript', Open)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Main.Visible = true
+		script.Parent.Visible = false
+	end)
+end
+coroutine.wrap(VGWTO_fake_script)()
